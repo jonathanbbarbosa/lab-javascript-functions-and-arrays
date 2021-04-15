@@ -1,20 +1,51 @@
 // Iteration #1: Find the maximum
+function maxOfTwoNumbers(x,y)
+{
+  return Math.max(x,y);
+}
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
-
+function findLongestWord(warray)
+{
+  for(let w=0;w<warray.length;w++)
+  {
+    if(warray[w]>warray[w+1])
+    {
+      return words[w]
+    }
+  }
+}
 // Iteration #3: Calculate the sum
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
-
+function sumNumbers(arrayNum)
+{
+  for (let t=0;t<arrayNum.length;t++)
+  {
+    sum=arrayNum[t]+sum
+  }
+  return sum;
+} 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
-
+function avgNumbers(arrayNum)
+{
+  for (let t=0;t<arrayNum.length;t++)
+  {
+    sum=arrayNum[t]+sum
+  }
+  return sum/arrayNum.length;
+} 
+avgNumbers(numbersAvg)
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
-
+function averageWordLength(x)
+{
+  
+}
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
@@ -30,6 +61,12 @@ const wordsUnique = [
   'bring'
 ];
 
+function uniquifyArray(z)
+{
+  let newArr=[...new Set(z)]
+  return (newArr)
+}
+uniquifyArray(wordsUnique)
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
@@ -47,6 +84,22 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
+function howManyTimes(x,y)
+{
+  let c=0;
+  for(let cout=0;cout<x.length;cout++)
+  {
+    if (x[cout]==y)
+    {
+      c=c+1;
+    }
+
+  }
+  return(c)
+}
+
+
 
 // Iteration #8: Bonus
 
@@ -72,3 +125,16 @@ const matrix = [
   [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54],
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
+
+function greatestProduct(matrix)
+{
+  let ini=0;
+  var=mm;
+  let r=matrix.length;
+  for (let i=0;i<matrix;i++)
+  {
+    ini=matrix[r][i]*matrix[r+1][i+1]
+    r=r-1
+    mm[i]=ini
+  }
+}
